@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Mobil stil tanımı */
+@media screen and (max-width: 375px) {
+    /* Mobil için özel stiller buraya */
+  }
+  
+  /* Masaüstü stil tanımı */
+  @media screen and (min-width: 376px) and (max-width: 1440px) {
+    /* Masaüstü için özel stiller buraya */
+  }
+  
+  /* Masaüstü büyük stil tanımı */
+  @media screen and (min-width: 1441px) {
+    /* Masaüstü büyük için özel stiller buraya */
+  }
+
+:root{
+    --lightpink: #f9f0ff;
+    --grayishpurple: #8c6991;
+    --darkpurple:#2f1533;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  background-color: var(--lightpink);
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+img, svg{
+  max-width: 100%;
+  display: block;
+}
+
+button{
+  cursor: pointer;
+  background-color: transparent;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border: 0; 
+}
+
+button:hover{
+  color: purple;
+
+}
+
+.container{
+  background-color: white;
+  max-width: 800px;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.faq-headline{
+  display: flex;
+  gap: 2rem;
+}
+
+.faq-headline h1{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.accordion-container .accordion-item:not(:last-child) {
+  border-bottom: 2px solid var(--lightpink);
+}
+
+.accordion-item .icons img{
+  min-width: 30px;
+}
+
+.accordion-item .icons .minus-icon{
+  display: none;
+}
+
+.accordion-btn{
+  font-weight: bold;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+}
+
+.accordion-description{
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-heigh 200ms ease;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+}
+
+.accordion-description p{
+  color: var(--grayishpurple);
+  padding: 1.5rem 0;
+}
+
+@media (max-width: 540px) {
+  body{
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+  }
+}
+
+
+.attribution { font-size: 13px; text-align: center;  font-weight: 600; }
+
+.attribution a { color: #ad28ea }
