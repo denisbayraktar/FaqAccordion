@@ -10,7 +10,7 @@ Frontend Mentor challenges help you improve your coding skills by building reali
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://denis-faq-accordion.netlify.app/
 
 
 ### What I learned
